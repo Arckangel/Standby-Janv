@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="image/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  </head>
+
+  <body>
+    <span id="home"></span>
+    <audio id="audioPlayer" src="sound/ost.mp3"></audio>
+    <button class="control" id="controlleur" onclick="play('audioPlayer', this)"><span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span></button>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 text-center contour">
+          <h1><span class="coeur">></span> <span id="titre">LoRem IPsum</span> <span class="coeur">></span></h1>
+
+          <br><br><br>
+
+          <img src="image/screen.gif" class="img-responsive center-block">
+
+          <br><br><br>
+
+          <h3>- <span class="white" id="question">LOrem</span> -</h3>
+          <br>
+
+          <h2 id="quest1" onclick="rep('rep1')">Lorem ipsum dolor sit amet, consectetur adipisicing elit ?</h2>
+          <p  id="rep1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <br>
+
+          <h2 id="quest2" onclick="rep('rep2')">Lorem ipsum dolor sit amet, consectetur adipisicing elit ?</h2>
+          <p  id="rep2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <br>
+
+          <h2 id="quest3" onclick="rep('rep3')">Lorem ipsum dolor sit amet, consectetur adipisicing elit ?</h2>
+          <p  id="rep3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <br><br>
+
+          <h3>- <span class="white" id="contact">LOrem</span> -</h3>
+          <br><br>
+
+          <form action="" method="post" onsubmit="return check();">
+            <input id="username" name="username" type="text" placeholder="Lorem Ipsum" onkeyup="verif_champ(this, 'username', 'userError')">
+            <p class="error" id="userError"></p>
+            <input id="email" type="email" placeholder="Lorem Ipsum" onkeyup="verif_champ(this, 'email', 'mailError')">
+            <p class="error" id="mailError"></p>
+            <textarea id="message" rows="5" placeholder="Lorem Ipsum" onkeyup="verif_champ(this, 'message', 'msgError')"></textarea>
+            <p class="error" id="msgError"></p>
+            <input type="submit" value=">> Lorem" class="bouton" id="bouton">
+          </form>
+        </div>
+        <div class="col-xs-12 text-center">
+          <a href="#home" class="js-scrollTo"><button id="lorem" type="button" name="lorem" onclick="lorem()">@</button></a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"> </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e9ee3b1867.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+
+</html>

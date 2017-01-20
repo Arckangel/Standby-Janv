@@ -1,0 +1,140 @@
+@font-face {
+  font-family: rpg;
+  src: url('../fonts/RPGSystem.ttf');
+}
+
+@font-face {
+  font-family: monster;
+  src: url('../fonts/MonsterFriendFore.otf');
+}
+
+@font-face {
+  font-family: mercy;
+  src: url('../fonts/MERCY.ttf');
+}
+
+body{
+
+  color: white;
+  font-family: rpg;
+  background-image: url(../image/fond.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  cursor: url('../image/cursor.cur'), pointer;
+}
+
+.control{
+  position: fixed;
+  background: none;
+  border: none;
+  margin-top: 2%;
+}
+
+#controlleur{
+  right: 2%;
+  font-size: 20px;
+  cursor: url('../image/cursor2.cur'), pointer;
+}
+
+.control:hover{
+  cursor: url('../image/cursor.cur'), pointer;
+}
+
+.contour{
+  margin-top: 50px;
+  padding-top: 50px;
+  border: 5px solid white;
+  margin-bottom: 30px;
+  background-color: black;
+}
+
+h1{
+  font-size: 40px;
+  font-family: monster;
+}
+
+.coeur{
+  color: red;
+  font-size: 30px;
+}
+
+h2{
+  color: red;
+  cursor: url('../image/cursor2.cur'), pointer;
+}
+
+h3{
+  color: yellow;
+  font-size: 30px;
+  font-family: monster;
+}
+
+.white{
+  color: white;
+}
+
+p{
+  font-size: 24px;
+}
+
+#rep1, #rep2, #rep3{
+  display: none;
+}
+
+form{
+  color: white;
+  font-size: 25px;
+  background: none;
+  margin-bottom: 50px;
+}
+
+input,textarea{
+  background-color: inherit;
+  margin-bottom: 10px;
+  width: 80%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#username, #email, #message{
+  border: 2px solid white;
+}
+
+.bouton{
+  margin-top: 10px;
+  width: 150px;
+  border: 3px solid #FF7F27;
+  text-transform: uppercase;
+  color: #FF7F27;
+  font-size: 25px;
+  font-family: mercy;
+}
+
+.bouton:hover{
+  border: 3px solid yellow;
+  color: yellow;
+  cursor: url('../image/cursor2.cur'), pointer;
+}
+
+.error{
+  color: yellow;
+}
+
+#lorem{
+  margin-top: 10px;
+  width: 100px;
+  border: 3px solid #FF7F27;
+  background-color: black;
+  text-transform: uppercase;
+  color: #FF7F27;
+  font-size: 25px;
+  font-family: mercy;
+  margin-bottom: 50px;
+}
+
+#lorem:hover{
+  border: 3px solid yellow;
+  color: yellow;
+  cursor: url('../image/cursor2.cur'), pointer;
+}
